@@ -128,19 +128,24 @@ color: var(--link-hover-color);
 
 /* Рішення для бізнесу */
 
+
 .hero {
-text-align: center;
+max-width: 1600px;
 margin-left: auto;
 margin-right: auto;
-
+ 
+background-image: linear-gradient( rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),
+url(../images/hero.jpg);
+text-align: center;
 background-color: var(--bg-footer-color);
 padding-bottom: 200px;
 }
 
 .hero .title {
 width: 696px;
-margin-top: 120px;
-margin-bottom: 0;
+padding-top: 120px;
+margin: 0;
+margin-bottom: 30px;
 margin-left: auto;
 margin-right: auto;
 
@@ -159,7 +164,7 @@ cursor: pointer;
 border: none;
 padding: 10px 32px;
 min-width: 216px;
-margin-top: 30px;
+margin: 0;
 
 color: var(--bg-color);
 background-color: var(--link-hover-color);
@@ -202,13 +207,22 @@ background-color: var(--bg-color);
    display: flex;
 }
 
+/* .advantage-list::before {
+display: inline-block;
+content: '';
+height: 120px;
+background-image: url(../images/antenna.svg);
+} */
 
 .advantage-list:not(:last-child), 
 .team-card:not(:last-child), 
 .image:not(:last-child) {
-    margin-right: 30px;
+margin-right: 30px;
 }
 .advantage-title {
+margin-bottom: 10px;
+margin-top: 0;
+
 font-size: 14px;
 line-height: 1.14;
 text-transform: uppercase;
@@ -217,14 +231,15 @@ text-transform: uppercase;
 .advantage-text {
 color: var(--title-text-color);
 line-height: 1.71;
+margin: 0;
 }
 
 
 /* Чим ми займаємося */
 
 .features-items {
-    display: flex;
-    flex-wrap: wrap;
+display: flex;
+flex-wrap: wrap;
 }
 .image {
 
@@ -236,36 +251,43 @@ width: 370px;
 
 
 .team {
-    background-color: var(--bg-team-color);
-    text-align: center;
+background-color: var(--bg-team-color);
+text-align: center;
 
-    margin-right: auto;
-    margin-left: auto;
+margin-right: auto;
+margin-left: auto;
 }
 
 .section-title {
-    margin-top: 0;
-    margin-bottom: 50px;
-    margin-left: auto;
-    margin-right: auto;
+margin-top: 0;
+margin-bottom: 50px;
+margin-left: auto;
+margin-right: auto;
 
-    font-size: 36px;
-    line-height: 1.16;
-    text-align: center;
+font-size: 36px;
+line-height: 1.16;
+text-align: center;
 }
 
 .team-list {
-    display: flex;
+display: flex;
 flex-wrap: wrap;
 }
 
 .team-name {
+margin: 0;
+padding-top: 30px;
+
 font-weight: 500;
 font-size: 16px;
 line-height: 1.18;
 }
 
 .team-text {
+padding-bottom: 30px;
+margin-top: 10px;
+margin-bottom: 0;
+
 font-size: 16px;
 line-height: 1.18;
 color: var(--title-text-color);
@@ -348,6 +370,7 @@ margin-right: 8px;
 margin-bottom: 50px;
 padding: 6px 25px;  
 
+border: none;
 cursor: pointer;
 color: var(--primary-text-color);
 background-color: var(--bg-team-color);
