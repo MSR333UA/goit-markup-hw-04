@@ -17,6 +17,9 @@ letter-spacing: 0.03em;
 font-size: 14px;
 }
 
+img {
+display: block;
+}
 /* Утиліта */
 
 .list {
@@ -32,7 +35,7 @@ padding-left: 15px;
 padding-right: 15px;   
 margin-left: auto;  
 margin-right: auto;
-width: 1230px;
+width: 1200px;
 /* outline: 2px solid tomato; */
 }
 
@@ -62,6 +65,11 @@ line-height: 1.19;
 color: var(--logo-color);
 }
 
+.main-nav {
+display: flex;
+align-items: center;
+}
+
 .nav {
     display: flex;
     margin-left: 93px;
@@ -70,17 +78,11 @@ color: var(--logo-color);
 .main {
 display: flex;
 
-
-}
-
-.main-nav {
-display: flex;
-align-items: center;
 }
 
 
 .item:not(:last-child) {
-    margin-right: 50px;
+margin-right: 50px;
 }
 
 .nav .link:hover,
@@ -200,13 +202,15 @@ background-color: var(--bg-color);
 }
 
 .advantages {
-    padding-bottom: 0;
+padding-bottom: 0;
 }
 
 .advantage {
    display: flex;
 }
-
+.bg-advantage {
+background-color:var(--bg-team-color);
+}
 /* .advantage-list::before {
 display: inline-block;
 content: '';
@@ -239,10 +243,9 @@ margin: 0;
 
 .features-items {
 display: flex;
-flex-wrap: wrap;
 }
-.image {
 
+.image {
 width: 370px;
 }
 
@@ -299,6 +302,16 @@ width: 270px;
 background-color: var(--bg-color);
 box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 02);
 border-radius: 0px 0px 4px 4px;
+}
+
+
+
+/* Постійні клієнти */
+
+
+.bg-customers {
+display: flex;
+flex-wrap: wrap;
 }
 
 
@@ -360,6 +373,7 @@ line-height: 1.71;
 .project-items {
     display: flex;
     justify-content: center;
+    margin-bottom: 50px;
 }
 
 .project-item:not(:last-child) {
@@ -367,7 +381,6 @@ margin-right: 8px;
 }
 
 .project-button {
-margin-bottom: 50px;
 padding: 6px 25px;  
 
 border: none;
@@ -401,10 +414,12 @@ flex-wrap: wrap;
 }
 
 
+.project-card {
+/* width: calc((100% - 60px) / 3); */
+width: 370px;
 
-.project-card  {
-/* width: 370px; */
-width: calc((100% - 60px) / 3);
+
+
 
 }
 .project-card:not(:nth-last-child(-n + 3)) {
@@ -415,13 +430,17 @@ width: calc((100% - 60px) / 3);
     margin-right: 30px;
 }
 
+.project-card:hover {
+box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06), 1px 4px 6px rgba(0, 0, 0, 0.16);
+}
+
 .aside {
 border: 1px solid #EEEEEE;
 border-top: none;
 padding: 20px 24px;
 }
 
-.project-name {
+.project-name { 
 margin-top: 0;
 margin-bottom: 4px;
 
