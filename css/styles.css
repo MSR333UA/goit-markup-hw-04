@@ -43,13 +43,14 @@ width: 1200px;
 .section {
 padding-top: 94px;
 padding-bottom: 94px;
-
-border-top: 1px solid #ececec;
 }
 
 
 /* Меню навігації */
 
+.header {
+border-bottom: 1px solid #ECECEC;
+}
 
 
 .logo-first {
@@ -74,17 +75,21 @@ align-items: center;
 }
 
 .nav {
-    display: flex;
-    margin-left: 93px;
+display: flex;
+align-items: center;
+margin-left: 93px;
+}
+
+.nav:last-child {
+margin-right: 318px;
 }
 
 .main {
 display: flex;
-
 }
 
 
-.item:not(:last-child) {
+.nav .item:not(:last-child) {
 margin-right: 50px;
 }
 
@@ -98,9 +103,9 @@ color: var(--link-hover-color);
 }
 
 .item .link {
-display: block;
-padding-top: 21px;
-padding-bottom: 21px;
+    display: flex;
+        align-items: center;
+padding: 21px 0;
 
 color: var(--primary-text-color);
 font-weight: 500;
@@ -111,27 +116,20 @@ line-height: calc(16/14);
 
 /* .contact  */
 
-.contact
- {
-    display: flex;
-    margin-left: auto;
-    margin-right: auto;
-    align-items: center;
-}
+
+ .contact {
+display: flex;
+align-items: center;
+padding-left: 0;
+ }
 
 
 .contact .link {
-
 color: var(--title-text-color); 
-font-weight: 500;
-letter-spacing: 0.02em;
-line-height: calc(16/14);
 }
 
-.icon {
-
-
-    margin-right: 10px;
+.item:first-child {
+    margin-right: 30px;
 }
 
 .item {
@@ -139,7 +137,7 @@ fill: var(--title-text-color);
 }
 
 .item:hover {
-    fill: var(--link-hover-color);
+fill: var(--link-hover-color);
 }
 
 .contact .link:hover,
@@ -147,6 +145,21 @@ fill: var(--title-text-color);
 color: var(--link-hover-color);   
 
 }
+
+.icon {
+margin-right: 10px;
+}
+
+.envelope {
+width: 16px;
+height: 10px;
+}
+
+.smartphone {
+width: 10px;
+height: 16px;
+}
+
 
 /* Рішення для бізнесу */
 
