@@ -248,6 +248,7 @@ background-color:var(--bg-team-color);
 margin-right: 30px;
 }
 .advantage-title {
+width: 270px;   
 margin-bottom: 10px;
 margin-top: 30px;
 
@@ -333,14 +334,16 @@ border-radius: 0px 0px 4px 4px;
 }
 
 .social {
-    display: flex;
-    padding-left: 32px;
-    padding-right: 32px;
+display: flex;
+justify-content: center;
 }
 
 .social-link {
-display: block;
-padding: 12px;
+display: flex;
+align-items: center;
+justify-content: center;
+height: 44px;
+width: 44px;
 border-radius: 50px;
 
 fill: var(--svg-color);
@@ -372,8 +375,9 @@ justify-content: center;
 
 
 .customer-link {
-display: block;
-padding: 16px 32px;
+display: flex;
+justify-content: center;
+align-items: center;
 fill: var(--svg-color);
 border: 1px solid var(--svg-color);
 width: 170px;
