@@ -232,7 +232,10 @@ padding-bottom: 0;
 }
 
 .bg-advantage {
-padding: 25px 100px;
+display: flex;
+justify-content: center;
+align-items: center;
+height: 120px;
  
 border-radius: 4px;
 background-color:var(--bg-team-color);
